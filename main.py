@@ -33,7 +33,7 @@ def index():
 
     # 條件判斷：如果是審核機器人 或 非台灣 IP -> 跳白頁
     if is_facebook_crawler or country_code != 'TW':
-        return redirect("https://example.com/" + query_string, code=302)  # 測試用白頁
+        return redirect("https://1xbettw.mystrikingly.com/" + query_string, code=302)  # 測試用白頁
     else:
         return redirect("https://bit.ly/1XBET-VIP?" + query_string, code=302)
 
